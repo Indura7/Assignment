@@ -2,7 +2,7 @@
 #include "functions.h"      //Our Function Header file
 
 
-int get_input(){
+void get_input(){
     int size=5;
     int numbers[5];
     for (int i=0;i<5;i++){
