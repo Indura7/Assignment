@@ -6,8 +6,10 @@ and function prototypes. */
 
 
 
-#define SIZE 5
+#define SIZE 3
 void get_input(int numbers[], int size);
+void display(int numbers[], int size);
+void compare_sets(int set1[], int set2[], int size);
 
 
 

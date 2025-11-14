@@ -2,17 +2,30 @@
 #include <stdlib.h>
 #include "functions.h"
 
-void get_input(int set1[], int size);
+
+void get_input(int numbers[], int size);
+void display(int numbers[], int size);
+void compare_sets(int set1[], int set2[], int size);
 
 int main(){
 
-int set1[5];
-int set2[5];
-int size =5;
+ int size =3;
+ int set1[size];
+ int set2[size];
 
-    get_input(set1,size);
-    printf("First set of number %d\n",set1[0]);
-    printf("Hello world!\n");
+
+    printf("\n Enter first set of numbers \n");
+    get_input(set1, size);
+    display(set1,size);
+    printf("\n");
+
+    printf("\n Enter second set of numbers \n");
+    get_input(set2, size);
+    display(set2,size);
+    printf("\n");
+
+    compare_sets(set1, set2, size);
+    printf("\nHELLO WORLD\n");
     return 0;
 
 

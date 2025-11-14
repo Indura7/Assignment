@@ -1,0 +1,1 @@
+//void get_input(int set1[], int size);
