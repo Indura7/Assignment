@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1763128808 source:f:\c programming\assignment\main.c
+1763135613 source:f:\c programming\assignment\main.c
 	<stdio.h>
 	<stdlib.h>
 	"functions.h"
@@ -7,9 +7,9 @@
 1763047564 source:f:\c programming\assignment\file1.c
 	<stdio.h>
 
-1763133853 source:f:\c programming\assignment\source.c
+1763135599 source:f:\c programming\assignment\source.c
 	<stdio.h>
 	"functions.h"
 
-1763128660 f:\c programming\assignment\functions.h
+1763135705 f:\c programming\assignment\functions.h
 
