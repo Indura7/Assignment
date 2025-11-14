@@ -2,11 +2,11 @@
 #include "functions.h"      //Our Function Header file
 
 
-void get_input(){
-    int size=5;
-    int numbers[5];
-    for (int i=0;i<5;i++){
+void get_input(int numbers[], int size){
+
+        for (int i=0;i<5;i++){
         printf("Enter number %d:",i+1);
         scanf("%d",&numbers[i]);
     }
-    return numbers[];
+
+}

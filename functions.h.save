@@ -7,7 +7,8 @@ and function prototypes. */
 
 
 #define SIZE 5
-void get_input()
+void get_input(int numbers[], int size);
+
 
 
 
