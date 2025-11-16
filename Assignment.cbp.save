@@ -41,6 +41,9 @@
 		<Unit filename="source.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="task_2.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

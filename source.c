@@ -20,7 +20,17 @@ void display(int numbers[], int size){     //Display the array that user had bee
 }
 
 void compare_sets(int set1[], int set2[], int size){
+
+    printf("Enter first set of %d numbers \n",size);
+    get_input(set1, size);
+    display(set1,size);
+    printf("\n");
     int mismatch_count =0;         //Record mismatch count.
+
+    printf("\n Enter second set of %d numbers \n",size);
+    get_input(set2, size);
+    display(set2,size);
+    printf("\n");
 
     for (int j=0;j<size;j++){
         if(set1[j]!=set2[j]){
@@ -41,3 +51,43 @@ void compare_sets(int set1[], int set2[], int size){
     printf("\nTwo integer sets are identical");                //If those two are same.
     }
 }
+
+
+
+void display_pipes(int pnumbers[], int psize){
+
+    printf("Let's print numbers with pipes\n");
+    get_input(pnumbers, psize);
+    display(pnumbers, psize);
+
+
+    char set[]="||||| ";
+    for (int i=0; i<psize; i++){
+        int n=pnumbers[i];
+        printf("\n%2d    ",n);  //That 2 before d is to keep two spaces.
+
+                int v=n/5;
+                int r=n%5;
+                //printf("%d is v ",v);
+                //printf("%d is r",r);
+
+                while(v>0){
+                    printf("%s",set);
+                    v--;
+                }
+                while(r>0){
+                    printf("|");
+                    r--;
+                }
+
+
+    }
+
+
+}
+
+
+
+
+
+
