@@ -3,8 +3,8 @@
 #include "functions.h"
 
 //Prototypes of functions
-void get_input(int numbers[], int size);
-void display(int numbers[], int size);
+//void get_input(int numbers[], int size);
+//void display(int numbers[], int size);
 void compare_sets(int set1[], int set2[], int size);
 void display_pipes(int pnumbers[], int psize);
 
@@ -17,16 +17,11 @@ int main(){
  int psize =3;
  int pnumbers[psize];
 
-    //compare_sets(set1, set2, size);
+    compare_sets(set1, set2, size);
     display_pipes(pnumbers, psize);
 
 
 
-
-
-
-
-    printf("\nHELLO WORLD\n");
     return 0;
 
 

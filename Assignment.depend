@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1763284067 source:f:\c programming\assignment\main.c
+1763290192 source:f:\c programming\assignment\main.c
 	<stdio.h>
 	<stdlib.h>
 	"functions.h"
