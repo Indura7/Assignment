@@ -1,44 +1,44 @@
-#include <stdio.h>          //for use printf,scanf,....
-#include "functions.h"      //Our Function Header file
+#include <stdio.h>          //for printf, scanf,....
+#include "functions.h"      //Header file with function prototypes
 
 
-void get_input(int numbers[], int size){      //Purpose: Get numbers from the user.
+void get_input(int numbers[], int size){      //Get numbers from the user.
 
-        for (int i=0;i<size;i++){             //If we change size we can change the iterations.
-        printf("Enter number %d: ",i+1);      //This tells the user which number to enter.
+        for (int i=0;i<size;i++){             //Loop based on given size.
+        printf("Enter number %d: ",i+1);      //Show which number to enter.
         scanf("%d",&numbers[i]);              //Stores input numbers inside the array.
     }
 }
 
 
-void display(int numbers[], int size){     //Display the array that user had been inputted.
-    int c=0;                               //This print the array in a single line.
+void display(int numbers[], int size){     //Print all elements of the array in one line
+    int c=0;
     while(size!=c){
         printf(" %d",numbers[c]);
         c++;
     }
 }
 
-void compare_sets(int set1[], int set2[], int size){      //Task 1- comparing two sets of arrays
+void compare_sets(int set1[], int set2[], int size){      //Compare two arrays
 
-    printf("Enter first set of %d numbers \n",size);      //Just because inform the user.
-    get_input(set1, size);                                //Take first array of numbers.
-    display(set1,size);                                   //Shows what user had been inputted.
+    printf("Enter first set of %d numbers \n",size);
+    get_input(set1, size);                                //Read first array.
+    display(set1,size);                                   //Show entered numbers.
     printf("\n");
-    int mismatch_count =0;                               //Record mismatch count.
+    int mismatch_count =0;                               //Track mismatches.
 
-    printf("\n Enter second set of %d numbers \n",size);  //Just like above taking 2nd array
-    get_input(set2, size);
-    display(set2,size);
+    printf("\n Enter second set of %d numbers \n",size);
+    get_input(set2, size);                              //Read first array.
+    display(set2,size);                                 //Show entered numbers.
     printf("\n");
 
-    for (int j=0;j<size;j++){                             //
+    for (int j=0;j<size;j++){                             //Compare two arrays one by one
         if(set1[j]!=set2[j]){
-            mismatch_count++;
+            mismatch_count++;                             //Count mismatch.
             if (mismatch_count==1){
                     printf("\nMismatch found at:\n");
-                    printf("%d",j); //Print first mismatch.
-                    continue;       //Just because use ,(comma) perfectly.
+                    printf("%d",j);                         //Print first mismatch.
+                    continue;
             }
             printf(",%d",j);
 
@@ -48,32 +48,32 @@ void compare_sets(int set1[], int set2[], int size){      //Task 1- comparing tw
         printf("\n\nTwo integer sets are not identical\n");
         printf("Total mismatches found: \n%d",mismatch_count);
     }else{
-    printf("\nTwo integer sets are identical");                //If those two are same.
+    printf("\nTwo integer sets are identical");
     }
 }
 
 
 
-void display_pipes(int pnumbers[], int psize){
+void display_pipes(int pnumbers[], int psize){                    //Print each number as'|'
 
     printf("\n\nLet's print numbers with pipes\n");
-    get_input(pnumbers, psize);
-    display(pnumbers, psize);
-    char set[]="||||| ";
+    get_input(pnumbers, psize);                                   //Recalling input function for get numbers from user
+    display(pnumbers, psize);                                     //Recalling display function for show numbers
+    char set[]="||||| ";                                          //5-Pipe block
 
     for (int i=0; i<psize; i++){
-        int n=pnumbers[i];
-        printf("\n%2d    ",n);  //That 2 before d is to keep two spaces.
+        int n=pnumbers[i];                                          //Taking the value of element
+        printf("\n%2d    ",n);                                      //%2d = print number in 2-width field.
 
-                int v=n/5;
-                int r=n%5;
+                int v=n/5;                                          //Number of 5-pipe block
+                int r=n%5;                                          //Remaining pipes
 
                 while(v>0){
-                    printf("%s",set);
+                    printf("%s",set);                               //Print groups of 5.
                     v--;
                 }
                 while(r>0){
-                    printf("|");
+                    printf("|");                                    //Print leftover pipes.
                     r--;
                 }
 
