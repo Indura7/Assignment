@@ -12,7 +12,7 @@ void get_input(int numbers[], int size){      //Get numbers from the user.
 
 
 void display(int numbers[], int size){     //Print all elements of the array in one line
-    int c=0;                               
+    int c=0;
     while(size!=c){
         printf(" %d",numbers[c]);
         c++;
@@ -21,24 +21,25 @@ void display(int numbers[], int size){     //Print all elements of the array in 
 
 void compare_sets(int set1[], int set2[], int size){      //Compare two arrays
 
-    printf("Enter first set of %d numbers \n",size);      
+    printf("Enter first set of %d numbers \n",size);
     get_input(set1, size);                                //Read first array.
     display(set1,size);                                   //Show entered numbers.
     printf("\n");
-    int mismatch_count =0;                               //Track mismatches.
-
-    printf("\n Enter second set of %d numbers \n",size);  
+    
+    printf("\n Enter second set of %d numbers \n",size);
     get_input(set2, size);                              //Read first array.
     display(set2,size);                                 //Show entered numbers.
     printf("\n");
+    int mismatch_count =0;                               //Track mismatches.
+    
 
     for (int j=0;j<size;j++){                             //Compare two arrays one by one
         if(set1[j]!=set2[j]){
-            mismatch_count++;                             //Count mismatch. 
+            mismatch_count++;                             //Count mismatch.
             if (mismatch_count==1){
                     printf("\nMismatch found at:\n");
                     printf("%d",j);                         //Print first mismatch.
-                    continue;                               
+                    continue;
             }
             printf(",%d",j);
 
@@ -48,7 +49,7 @@ void compare_sets(int set1[], int set2[], int size){      //Compare two arrays
         printf("\n\nTwo integer sets are not identical\n");
         printf("Total mismatches found: \n%d",mismatch_count);
     }else{
-    printf("\nTwo integer sets are identical");                
+    printf("\nTwo integer sets are identical");
     }
 }
 
@@ -56,8 +57,8 @@ void compare_sets(int set1[], int set2[], int size){      //Compare two arrays
 
 void display_pipes(int pnumbers[], int psize){                    //Print each number as'|'
 
-    printf("\n\nLet's print numbers with pipes\n");                      
-    get_input(pnumbers, psize);                                   //Recalling input function for get numbers from user                        
+    printf("\n\nLet's print numbers with pipes\n");
+    get_input(pnumbers, psize);                                   //Recalling input function for get numbers from user
     display(pnumbers, psize);                                     //Recalling display function for show numbers
     char set[]="||||| ";                                          //5-Pipe block
 
@@ -69,11 +70,11 @@ void display_pipes(int pnumbers[], int psize){                    //Print each n
                 int r=n%5;                                          //Remaining pipes
 
                 while(v>0){
-                    printf("%s",set);
+                    printf("%s",set);                               //Print groups of 5.
                     v--;
                 }
                 while(r>0){
-                    printf("|");
+                    printf("|");                                    //Print leftover pipes.
                     r--;
                 }
 

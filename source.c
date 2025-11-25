@@ -25,12 +25,13 @@ void compare_sets(int set1[], int set2[], int size){      //Compare two arrays
     get_input(set1, size);                                //Read first array.
     display(set1,size);                                   //Show entered numbers.
     printf("\n");
-    int mismatch_count =0;                               //Track mismatches.
 
     printf("\n Enter second set of %d numbers \n",size);
     get_input(set2, size);                              //Read first array.
     display(set2,size);                                 //Show entered numbers.
     printf("\n");
+    int mismatch_count =0;                               //Track mismatches.
+
 
     for (int j=0;j<size;j++){                             //Compare two arrays one by one
         if(set1[j]!=set2[j]){

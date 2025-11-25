@@ -1,17 +1,16 @@
-/*This is the Library header file, we include all the constants,macros
-and function prototypes. */
+/*Function library header file:
+   Contains function prototypes and header guards. */
 
-#ifndef FUNCTIONS_H   //prevent a file from being included multiple times in a single compilation
+#ifndef FUNCTIONS_H   //prevent multiple inclusions
 #define FUNCTIONS_H  //Marks it as included
 
 
 
 #define SIZE
-void get_input(int numbers[], int size);
-void display(int numbers[], int size);
-void compare_sets(int set1[], int set2[], int size);
-
-//void display_pipes(int pnumbers[], int size);
+void get_input(int numbers[], int size);              //read numbers into array
+void display(int numbers[], int size);                //print array elements
+void compare_sets(int set1[], int set2[], int size);  //compare two integer sets
+void display_pipes(int pnumbers[], int size);         //show '|' for numbers
 
 
 

@@ -3,22 +3,21 @@
 #include "functions.h"
 
 //Prototypes of functions
-//void get_input(int numbers[], int size);
-//void display(int numbers[], int size);
+
 void compare_sets(int set1[], int set2[], int size);
 void display_pipes(int pnumbers[], int psize);
 
 int main(){
 
- int size =3;           //This one can change the sizes of arrays and loops.
+ int size =5;           //number of elements for the two sets
  int set1[size];
  int set2[size];
 
- int psize =3;
+ int psize =5;          //number of elements for pipe display
  int pnumbers[psize];
 
-    compare_sets(set1, set2, size);
-    display_pipes(pnumbers, psize);
+    compare_sets(set1, set2, size);     //Task 1
+    display_pipes(pnumbers, psize);     //Task 2
 
 
 
