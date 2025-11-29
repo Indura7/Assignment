@@ -5,8 +5,6 @@
 #define FUNCTIONS_H  //Marks it as included
 
 
-
-#define SIZE
 void get_input(int numbers[], int size);              //read numbers into array
 void display(int numbers[], int size);                //print array elements
 void compare_sets(int set1[], int set2[], int size);  //compare two integer sets

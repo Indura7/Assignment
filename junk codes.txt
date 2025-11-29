@@ -4,7 +4,7 @@
 //I removed this because now we don't need this in main function. It's inside the compare_sets function........
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>     //I also removed this from the main code
 #include "functions.h"
 
 //Prototypes of functions
