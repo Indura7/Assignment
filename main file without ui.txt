@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "functions.h"
+
+//Prototypes of functions
+void compare_sets(int set1[], int set2[], int size);
+void display_pipes(int pnumbers[], int psize);
+
+int main(){
+
+  //Task -1
+ int size =5;                                          //number of elements for the two sets
+ int set1[size];                                       //first integer set
+ int set2[size];                                       //second integer set
+    compare_sets(set1, set2, size);     
+
+
+ //Task -2
+ int psize =5;                                          //number of elements for pipe display
+ int pnumbers[psize];                                  //array to hold numbers for pipe display
+    display_pipes(pnumbers, psize);     
+
+    return 0;
+
+
+}
